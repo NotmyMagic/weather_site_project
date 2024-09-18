@@ -8,7 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #cecece;
+  background-color: #9fd7e4;
 }
 
 li {
@@ -24,7 +24,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #4b6f79;
 }
 
 .active {
@@ -32,7 +32,7 @@ li a:hover:not(.active) {
 }
 
 body {
-  background: rgb(197, 190, 190);
+  background: rgb(196, 235, 236);
   color: #111;
   padding: 4em;
   font-family: sans-serif;
@@ -58,7 +58,7 @@ hr {
 .article {
   text-align: center;
   padding: 1em;
-  background: rgba(200, 200, 255, 0.3);
+  background: rgba(172, 194, 255, 0.3);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
 }
 .article img {
@@ -69,7 +69,7 @@ hr {
   padding: 1em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
   grid-column: 1 / 5;
-  background: rgba(200, 200, 255, 0.3);
+  background: rgba(172, 194, 255, 0.3);
 }
 .day {
   color: #111;
@@ -79,11 +79,11 @@ hr {
 }
 .article:nth-child(1) {
   grid-column: 1 / -1;
-  background: rgba(200, 200, 255, 0.3);
+  background: rgba(172, 194, 255, 0.3);
 }
 .article:nth-child(8) {
   grid-column: -3 / -1;
-  background: rgba(255, 200, 255, 0.3);
+  background: rgba(172, 194, 255, 0.3);
 }
 .article:nth-child(8):after {
   content: "grid-column: -3 / -1";
@@ -102,7 +102,7 @@ hr {
   padding: 15px;
   margin-top: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
-  background-color: rgba(200, 200, 255, 0.3);
+  background-color: rgba(172, 194, 255, 0.3);
 }
 .five-article {
   text-align: center;
@@ -115,11 +115,13 @@ hr {
 }
 .flex {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
 }
 .flex-col {
   text-align: center;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 #stats {
   text-align: start;
