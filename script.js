@@ -1,4 +1,4 @@
-let API_Key = `https://api.openweathermap.org/data/2.5/weather?q=tooele&appid=4502b5c12580b39526fc559b8e134fe6`;
+let API_Key = `https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=4502b5c12580b39526fc559b8e134fe6`;
 
 fetch(API_Key)
   .then((response) => response.json())
