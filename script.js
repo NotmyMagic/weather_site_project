@@ -1,4 +1,5 @@
-let API_Key = `https://api.openweathermap.org/data/2.5/weather?q=tooele&appid=4502b5c12580b39526fc559b8e134fe6`;
+let API_Key = `https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=4502b5c12580b39526fc559b8e134fe6`;
+let news_Key = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=bbabcacb0b2b4a12a416f929e0af8bc5`;
 
 fetch(API_Key)
   .then((response) => response.json())
@@ -26,4 +27,17 @@ fetch(API_Key)
 
     let windSpd = document.getElementById("current-windSpeed");
     windSpd.textContent = wind.speed;
+  });
+
+fetch(news_Key)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    let article = jsObject.articles;
+
+    for (let i = 0; i < article.length; i++) {
+      let article1 = document.createElement("article");
+      article1.className = "news-article";
+      let img;
+    }
   });
