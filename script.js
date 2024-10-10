@@ -9,7 +9,9 @@ fetch(API_Key)
     let name = jsObject.name;
     let weather = jsObject.weather;
 
-    let city = document.getElementById("fivecity");
+    let fivecity = document.getElementById("fivecity");
+    let city = document.getElementById("city");
+    fivecity.textContent = name;
     city.textContent = name;
 
     let currently = document.getElementById("current-desc");
