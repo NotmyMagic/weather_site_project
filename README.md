@@ -1,1 +1,1 @@
-Using javascript to add a dynamic footer and live updating weather and news
+A weather and news app to show live updating weather and news
